@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { UserProvider } from './context/UserContext';
 import Navbar from './components/Navbar';
@@ -24,6 +24,7 @@ function App() {
                 <Route path="/exam" element={<ExamPage />} />
                 <Route path="/training" element={<TrainingPage />} />
                 <Route path="/chatbot" element={<ChatbotPage />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>
           </div>

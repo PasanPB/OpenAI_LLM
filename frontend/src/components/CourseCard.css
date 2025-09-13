@@ -1,0 +1,98 @@
+.course-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.difficulty-badge {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.content-type {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.course-description {
+  color: #6b7280;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.course-details {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.prerequisites {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+  padding: 8px;
+  background-color: #f9fafb;
+  border-radius: 4px;
+}
+
+.start-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start-btn:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.start-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.start-btn.completed {
+  background-color: #10b981;
+}
+
+.start-btn.completed:hover {
+  background-color: #059669;
+}
