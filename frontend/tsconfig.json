@@ -17,5 +17,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  // Removed the reference to tsconfig.node.json as it does not exist
 }

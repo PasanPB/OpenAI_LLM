@@ -1,0 +1,147 @@
+.training-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.training-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+.training-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.level-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.level-badge.beginner {
+  background-color: #ef4444;
+}
+
+.level-badge.intermediate {
+  background-color: #f59e0b;
+}
+
+.level-badge.advanced {
+  background-color: #10b981;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+}
+
+.courses-section {
+  margin-bottom: 40px;
+}
+
+.courses-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.no-courses {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-courses h3 {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.progress-section {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .training-header h1 {
+    font-size: 2rem;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .progress-stats {
+    grid-template-columns: 1fr;
+  }
+}
